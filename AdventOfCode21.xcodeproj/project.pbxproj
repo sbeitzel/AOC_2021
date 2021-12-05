@@ -11,18 +11,33 @@
 		7CCD10F9275AA0AD00D116D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD10F8275AA0AD00D116D0 /* ContentView.swift */; };
 		7CCD10FB275AA0B300D116D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD10FA275AA0B300D116D0 /* Assets.xcassets */; };
 		7CCD10FE275AA0B300D116D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD10FD275AA0B300D116D0 /* Preview Assets.xcassets */; };
-		7CCD1112275AA27600D116D0 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 7CCD1111275AA27600D116D0 /* Algorithms */; };
 		7CCD1124275AAD4700D116D0 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 7CCD1123275AAD4700D116D0 /* Algorithms */; };
-		7CCD1127275AB1D600D116D0 /* day2Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1125275AB15D00D116D0 /* day2Input.txt */; };
+		7CCD1127275AB1D600D116D0 /* day02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1125275AB15D00D116D0 /* day02.txt */; };
 		7CCD1129275AB2F600D116D0 /* Day2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1128275AB2F600D116D0 /* Day2View.swift */; };
-		7CCD112B275AD09200D116D0 /* day3input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD112A275AD09200D116D0 /* day3input.txt */; };
+		7CCD112B275AD09200D116D0 /* day03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD112A275AD09200D116D0 /* day03.txt */; };
 		7CCD112D275AF30A00D116D0 /* Day3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD112C275AF30A00D116D0 /* Day3View.swift */; };
-		7CCD1135275BE1DA00D116D0 /* AdventOfCode21Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1134275BE1DA00D116D0 /* AdventOfCode21Tests.swift */; };
 		7CCD113C275BE26500D116D0 /* BitCounting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD113B275BE26500D116D0 /* BitCounting.swift */; };
 		7CCD113E275BF74100D116D0 /* InputParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD113D275BF74100D116D0 /* InputParsing.swift */; };
 		7CCD1140275BF9BB00D116D0 /* Day1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD113F275BF9BB00D116D0 /* Day1Tests.swift */; };
 		7CCD1142275BFB0600D116D0 /* sample_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1141275BFB0600D116D0 /* sample_1.txt */; };
 		7CCD1145275BFC0A00D116D0 /* IncreasingDecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1144275BFC0A00D116D0 /* IncreasingDecimal.swift */; };
+		7CCD114B275C020500D116D0 /* Day1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD114A275C020500D116D0 /* Day1View.swift */; };
+		7CCD114D275C049000D116D0 /* Int-NoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD114C275C049000D116D0 /* Int-NoGroup.swift */; };
+		7CCD114F275C06C100D116D0 /* day01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD114E275C06C100D116D0 /* day01.txt */; };
+		7CCD1152275C0B6F00D116D0 /* sample_02.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1151275C0B6F00D116D0 /* sample_02.txt */; };
+		7CCD1154275C0C8F00D116D0 /* Day2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1153275C0C8F00D116D0 /* Day2Tests.swift */; };
+		7CCD1156275C0D9100D116D0 /* MoveCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1155275C0D9100D116D0 /* MoveCommands.swift */; };
+		7CCD1158275C16A000D116D0 /* Day3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1157275C16A000D116D0 /* Day3Tests.swift */; };
+		7CCD115A275C16B600D116D0 /* sample_03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1159275C16B600D116D0 /* sample_03.txt */; };
+		7CCD115E275C1B7000D116D0 /* garbage_03.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD115D275C1B7000D116D0 /* garbage_03.txt */; };
+		7CCD1160275C298200D116D0 /* Int-MatchBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD115F275C298200D116D0 /* Int-MatchBit.swift */; };
+		7CCD1162275C38D200D116D0 /* sample_o2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1161275C38D200D116D0 /* sample_o2.txt */; };
+		7CCD1164275C444400D116D0 /* sample_04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1163275C444400D116D0 /* sample_04.txt */; };
+		7CCD1166275C446100D116D0 /* day04.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD1165275C446100D116D0 /* day04.txt */; };
+		7CCD1168275C44FD00D116D0 /* Day4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1167275C44FD00D116D0 /* Day4Tests.swift */; };
+		7CCD116A275C452200D116D0 /* Day4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD1169275C452200D116D0 /* Day4View.swift */; };
+		7CCD116C275C492C00D116D0 /* BingoBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD116B275C492C00D116D0 /* BingoBoard.swift */; };
+		7CCD116E275C575F00D116D0 /* Array-chunked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD116D275C575F00D116D0 /* Array-chunked.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +50,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7CCD1107275AA23C00D116D0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		7CCD10F3275AA0AD00D116D0 /* AdventOfCode21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCD10F6275AA0AD00D116D0 /* AdventOfCode21App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode21App.swift; sourceTree = "<group>"; };
@@ -54,18 +57,33 @@
 		7CCD10FA275AA0B300D116D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CCD10FD275AA0B300D116D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CCD10FF275AA0B300D116D0 /* AdventOfCode21.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdventOfCode21.entitlements; sourceTree = "<group>"; };
-		7CCD1109275AA23C00D116D0 /* day1a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day1a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CCD1125275AB15D00D116D0 /* day2Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2Input.txt; sourceTree = "<group>"; };
+		7CCD1125275AB15D00D116D0 /* day02.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day02.txt; sourceTree = "<group>"; };
 		7CCD1128275AB2F600D116D0 /* Day2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2View.swift; sourceTree = "<group>"; };
-		7CCD112A275AD09200D116D0 /* day3input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day3input.txt; sourceTree = "<group>"; };
+		7CCD112A275AD09200D116D0 /* day03.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day03.txt; sourceTree = "<group>"; };
 		7CCD112C275AF30A00D116D0 /* Day3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3View.swift; sourceTree = "<group>"; };
 		7CCD1132275BE1DA00D116D0 /* AdventOfCode21Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCode21Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CCD1134275BE1DA00D116D0 /* AdventOfCode21Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode21Tests.swift; sourceTree = "<group>"; };
 		7CCD113B275BE26500D116D0 /* BitCounting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCounting.swift; sourceTree = "<group>"; };
 		7CCD113D275BF74100D116D0 /* InputParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParsing.swift; sourceTree = "<group>"; };
 		7CCD113F275BF9BB00D116D0 /* Day1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Tests.swift; sourceTree = "<group>"; };
 		7CCD1141275BFB0600D116D0 /* sample_1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_1.txt; sourceTree = "<group>"; };
 		7CCD1144275BFC0A00D116D0 /* IncreasingDecimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingDecimal.swift; sourceTree = "<group>"; };
+		7CCD114A275C020500D116D0 /* Day1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1View.swift; sourceTree = "<group>"; };
+		7CCD114C275C049000D116D0 /* Int-NoGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-NoGroup.swift"; sourceTree = "<group>"; };
+		7CCD114E275C06C100D116D0 /* day01.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.txt; sourceTree = "<group>"; };
+		7CCD1151275C0B6F00D116D0 /* sample_02.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_02.txt; sourceTree = "<group>"; };
+		7CCD1153275C0C8F00D116D0 /* Day2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2Tests.swift; sourceTree = "<group>"; };
+		7CCD1155275C0D9100D116D0 /* MoveCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCommands.swift; sourceTree = "<group>"; };
+		7CCD1157275C16A000D116D0 /* Day3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3Tests.swift; sourceTree = "<group>"; };
+		7CCD1159275C16B600D116D0 /* sample_03.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_03.txt; sourceTree = "<group>"; };
+		7CCD115D275C1B7000D116D0 /* garbage_03.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = garbage_03.txt; sourceTree = "<group>"; };
+		7CCD115F275C298200D116D0 /* Int-MatchBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-MatchBit.swift"; sourceTree = "<group>"; };
+		7CCD1161275C38D200D116D0 /* sample_o2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_o2.txt; sourceTree = "<group>"; };
+		7CCD1163275C444400D116D0 /* sample_04.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_04.txt; sourceTree = "<group>"; };
+		7CCD1165275C446100D116D0 /* day04.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day04.txt; sourceTree = "<group>"; };
+		7CCD1167275C44FD00D116D0 /* Day4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4Tests.swift; sourceTree = "<group>"; };
+		7CCD1169275C452200D116D0 /* Day4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4View.swift; sourceTree = "<group>"; };
+		7CCD116B275C492C00D116D0 /* BingoBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoBoard.swift; sourceTree = "<group>"; };
+		7CCD116D275C575F00D116D0 /* Array-chunked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array-chunked.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +92,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCD1124275AAD4700D116D0 /* Algorithms in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CCD1106275AA23C00D116D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CCD1112275AA27600D116D0 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				7CCD10F3275AA0AD00D116D0 /* AdventOfCode21.app */,
-				7CCD1109275AA23C00D116D0 /* day1a */,
 				7CCD1132275BE1DA00D116D0 /* AdventOfCode21Tests.xctest */,
 			);
 			name = Products;
@@ -120,13 +129,10 @@
 			children = (
 				7CCD10F6275AA0AD00D116D0 /* AdventOfCode21App.swift */,
 				7CCD1147275C004300D116D0 /* Views */,
-				7CCD1128275AB2F600D116D0 /* Day2View.swift */,
-				7CCD112C275AF30A00D116D0 /* Day3View.swift */,
 				7CCD1146275C003300D116D0 /* Processing */,
 				7CCD10FA275AA0B300D116D0 /* Assets.xcassets */,
 				7CCD10FF275AA0B300D116D0 /* AdventOfCode21.entitlements */,
-				7CCD112A275AD09200D116D0 /* day3input.txt */,
-				7CCD1125275AB15D00D116D0 /* day2Input.txt */,
+				7CCD1150275C06EA00D116D0 /* Data */,
 				7CCD10FC275AA0B300D116D0 /* Preview Content */,
 			);
 			path = AdventOfCode21;
@@ -150,7 +156,9 @@
 		7CCD1133275BE1DA00D116D0 /* AdventOfCode21Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7CCD1134275BE1DA00D116D0 /* AdventOfCode21Tests.swift */,
+				7CCD1167275C44FD00D116D0 /* Day4Tests.swift */,
+				7CCD1157275C16A000D116D0 /* Day3Tests.swift */,
+				7CCD1153275C0C8F00D116D0 /* Day2Tests.swift */,
 				7CCD113F275BF9BB00D116D0 /* Day1Tests.swift */,
 				7CCD1143275BFB2300D116D0 /* Sample Data */,
 			);
@@ -160,6 +168,11 @@
 		7CCD1143275BFB2300D116D0 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
+				7CCD1163275C444400D116D0 /* sample_04.txt */,
+				7CCD1159275C16B600D116D0 /* sample_03.txt */,
+				7CCD1161275C38D200D116D0 /* sample_o2.txt */,
+				7CCD115D275C1B7000D116D0 /* garbage_03.txt */,
+				7CCD1151275C0B6F00D116D0 /* sample_02.txt */,
 				7CCD1141275BFB0600D116D0 /* sample_1.txt */,
 			);
 			path = "Sample Data";
@@ -169,8 +182,13 @@
 			isa = PBXGroup;
 			children = (
 				7CCD113B275BE26500D116D0 /* BitCounting.swift */,
+				7CCD116D275C575F00D116D0 /* Array-chunked.swift */,
+				7CCD115F275C298200D116D0 /* Int-MatchBit.swift */,
 				7CCD1144275BFC0A00D116D0 /* IncreasingDecimal.swift */,
 				7CCD113D275BF74100D116D0 /* InputParsing.swift */,
+				7CCD116B275C492C00D116D0 /* BingoBoard.swift */,
+				7CCD114C275C049000D116D0 /* Int-NoGroup.swift */,
+				7CCD1155275C0D9100D116D0 /* MoveCommands.swift */,
 			);
 			path = Processing;
 			sourceTree = "<group>";
@@ -179,8 +197,23 @@
 			isa = PBXGroup;
 			children = (
 				7CCD10F8275AA0AD00D116D0 /* ContentView.swift */,
+				7CCD1169275C452200D116D0 /* Day4View.swift */,
+				7CCD112C275AF30A00D116D0 /* Day3View.swift */,
+				7CCD1128275AB2F600D116D0 /* Day2View.swift */,
+				7CCD114A275C020500D116D0 /* Day1View.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7CCD1150275C06EA00D116D0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7CCD1165275C446100D116D0 /* day04.txt */,
+				7CCD112A275AD09200D116D0 /* day03.txt */,
+				7CCD1125275AB15D00D116D0 /* day02.txt */,
+				7CCD114E275C06C100D116D0 /* day01.txt */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,26 +239,6 @@
 			productName = AdventOfCode21;
 			productReference = 7CCD10F3275AA0AD00D116D0 /* AdventOfCode21.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7CCD1108275AA23C00D116D0 /* day1a */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7CCD110F275AA23C00D116D0 /* Build configuration list for PBXNativeTarget "day1a" */;
-			buildPhases = (
-				7CCD1105275AA23C00D116D0 /* Sources */,
-				7CCD1106275AA23C00D116D0 /* Frameworks */,
-				7CCD1107275AA23C00D116D0 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = day1a;
-			packageProductDependencies = (
-				7CCD1111275AA27600D116D0 /* Algorithms */,
-			);
-			productName = day1a;
-			productReference = 7CCD1109275AA23C00D116D0 /* day1a */;
-			productType = "com.apple.product-type.tool";
 		};
 		7CCD1131275BE1DA00D116D0 /* AdventOfCode21Tests */ = {
 			isa = PBXNativeTarget;
@@ -258,9 +271,6 @@
 					7CCD10F2275AA0AD00D116D0 = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					7CCD1108275AA23C00D116D0 = {
-						CreatedOnToolsVersion = 13.1;
-					};
 					7CCD1131275BE1DA00D116D0 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 7CCD10F2275AA0AD00D116D0;
@@ -284,7 +294,6 @@
 			projectRoot = "";
 			targets = (
 				7CCD10F2275AA0AD00D116D0 /* AdventOfCode21 */,
-				7CCD1108275AA23C00D116D0 /* day1a */,
 				7CCD1131275BE1DA00D116D0 /* AdventOfCode21Tests */,
 			);
 		};
@@ -295,10 +304,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCD112B275AD09200D116D0 /* day3input.txt in Resources */,
+				7CCD112B275AD09200D116D0 /* day03.txt in Resources */,
+				7CCD1166275C446100D116D0 /* day04.txt in Resources */,
+				7CCD114F275C06C100D116D0 /* day01.txt in Resources */,
 				7CCD10FE275AA0B300D116D0 /* Preview Assets.xcassets in Resources */,
 				7CCD10FB275AA0B300D116D0 /* Assets.xcassets in Resources */,
-				7CCD1127275AB1D600D116D0 /* day2Input.txt in Resources */,
+				7CCD1127275AB1D600D116D0 /* day02.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +317,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCD1164275C444400D116D0 /* sample_04.txt in Resources */,
+				7CCD115A275C16B600D116D0 /* sample_03.txt in Resources */,
+				7CCD1152275C0B6F00D116D0 /* sample_02.txt in Resources */,
+				7CCD1162275C38D200D116D0 /* sample_o2.txt in Resources */,
 				7CCD1142275BFB0600D116D0 /* sample_1.txt in Resources */,
+				7CCD115E275C1B7000D116D0 /* garbage_03.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,20 +354,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCD116C275C492C00D116D0 /* BingoBoard.swift in Sources */,
 				7CCD10F9275AA0AD00D116D0 /* ContentView.swift in Sources */,
+				7CCD114D275C049000D116D0 /* Int-NoGroup.swift in Sources */,
 				7CCD112D275AF30A00D116D0 /* Day3View.swift in Sources */,
 				7CCD1145275BFC0A00D116D0 /* IncreasingDecimal.swift in Sources */,
+				7CCD114B275C020500D116D0 /* Day1View.swift in Sources */,
 				7CCD1129275AB2F600D116D0 /* Day2View.swift in Sources */,
+				7CCD1156275C0D9100D116D0 /* MoveCommands.swift in Sources */,
 				7CCD113C275BE26500D116D0 /* BitCounting.swift in Sources */,
 				7CCD10F7275AA0AD00D116D0 /* AdventOfCode21App.swift in Sources */,
+				7CCD116E275C575F00D116D0 /* Array-chunked.swift in Sources */,
+				7CCD1160275C298200D116D0 /* Int-MatchBit.swift in Sources */,
+				7CCD116A275C452200D116D0 /* Day4View.swift in Sources */,
 				7CCD113E275BF74100D116D0 /* InputParsing.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CCD1105275AA23C00D116D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +376,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCD1140275BF9BB00D116D0 /* Day1Tests.swift in Sources */,
-				7CCD1135275BE1DA00D116D0 /* AdventOfCode21Tests.swift in Sources */,
+				7CCD1158275C16A000D116D0 /* Day3Tests.swift in Sources */,
+				7CCD1154275C0C8F00D116D0 /* Day2Tests.swift in Sources */,
+				7CCD1168275C44FD00D116D0 /* Day4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,28 +562,6 @@
 			};
 			name = Release;
 		};
-		7CCD110D275AA23C00D116D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D3DPVGA48J;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		7CCD110E275AA23C00D116D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D3DPVGA48J;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		7CCD1139275BE1DA00D116D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -633,15 +629,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CCD110F275AA23C00D116D0 /* Build configuration list for PBXNativeTarget "day1a" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CCD110D275AA23C00D116D0 /* Debug */,
-				7CCD110E275AA23C00D116D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7CCD1138275BE1DA00D116D0 /* Build configuration list for PBXNativeTarget "AdventOfCode21Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -665,11 +652,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7CCD1111275AA27600D116D0 /* Algorithms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7CCD1110275AA27600D116D0 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
-			productName = Algorithms;
-		};
 		7CCD1123275AAD4700D116D0 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7CCD1110275AA27600D116D0 /* XCRemoteSwiftPackageReference "swift-algorithms" */;

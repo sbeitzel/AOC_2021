@@ -11,32 +11,36 @@ struct BitCounting {
     let values: [Int]
     let fieldWidth: Int
     let threshold: Int
-    let bitCounts: [Int]
+
+    var bitCounts: [Int] {
+        var workingCounts = Array.init(repeating: 0, count: 64)
+        for value in values {
+            for exponent in (0...63) {
+                let mask = 1 << exponent
+                if value & mask > 0 {
+                    workingCounts[exponent] += 1
+                }
+            }
+        }
+        return workingCounts
+    }
+
+    init() {
+        values = []
+        fieldWidth = 0
+        threshold = 0
+    }
 
     init(_ bitStrings: [String]) throws {
         guard let sample = bitStrings.first else { throw AoCError.parseError }
         self.fieldWidth = sample.count
-        self.threshold = bitStrings.count / 2
-        var workingCounts = Array.init(repeating: 0, count: self.fieldWidth)
-        // convert the strings to numbers
-        self.values = bitStrings.map({ string -> Int in
-            var value: Int = 0
-            for digit in string {
-                value = value << 1
-                if digit == "1" {
-                    value |= 1
-                }
-            }
-            return value
-        })
-
-        // now, find the most/least frequent bit in each place
-        for value in values {
-            for exponent in 0..<self.fieldWidth where value & (1 << exponent) > 0 {
-                workingCounts[exponent] += 1
-            }
+        if bitStrings.count % 2 == 0 {
+            self.threshold = bitStrings.count / 2
+        } else {
+            self.threshold = (bitStrings.count / 2) + 1
         }
-        self.bitCounts = workingCounts
+        // convert the strings to numbers
+        self.values = binaryStringsToInts(bitStrings)
     }
 
     func mostCommonBit(_ place: Int) -> Int {
@@ -53,9 +57,71 @@ struct BitCounting {
         return 0
     }
 
-    func doesMatch(value: Int, mask: Int) -> Bool {
-        return value & mask != 0
+    func computeGamma() -> Int {
+        var gamma = 0
+        for exponent in 0..<fieldWidth {
+            gamma += mostCommonBit(exponent) << exponent
+        }
+        return gamma
+    }
+
+    func computeEpsilon() -> Int {
+        var epsilon = 0
+        for exponent in 0..<fieldWidth {
+            epsilon += leastCommonBit(exponent) << exponent
+        }
+        return epsilon
+    }
+
+    func oxygen(startingPlace: Int) -> Int {
+        guard values.count > 1 else { return 0 }
+        var numbers = values
+
+        let bit = mostCommonBit(startingPlace)
+        let mask = 1 << startingPlace
+        numbers = numbers.filter({ $0.matchesBitAtMask(mask: mask, bitValue: bit)})
+        if numbers.count == 1 {
+            return numbers[0]
+        } else {
+            guard startingPlace > 0 else {
+                print("We got to the end!")
+                return 0
+            }
+            let bitStrings = intsToBinaryStrings(numbers, places: fieldWidth)
+            do {
+                let subsetCounting = try BitCounting(bitStrings)
+                return subsetCounting.oxygen(startingPlace: startingPlace-1)
+            } catch {
+                print("Error computing from subset!")
+                return 0
+            }
+        }
+    }
+
+    func carbonDioxide(startingPlace: Int) -> Int {
+        guard values.count > 1 else { return 0 }
+        var numbers = values
+
+        let bit = leastCommonBit(startingPlace)
+        let mask = 1 << startingPlace
+        numbers = numbers.filter({ $0.matchesBitAtMask(mask: mask, bitValue: bit)})
+        if numbers.count == 1 {
+            return numbers[0]
+        } else {
+            guard startingPlace > 0 else {
+                print("We got to the end!")
+                return 0
+            }
+            let bitStrings = intsToBinaryStrings(numbers, places: fieldWidth)
+            do {
+                let subsetCounting = try BitCounting(bitStrings)
+                return subsetCounting.carbonDioxide(startingPlace: startingPlace-1)
+            } catch {
+                print("Error computing from subset!")
+                return 0
+            }
+        }
     }
 }
 
-enum AoCError: Error { case parseError }
+enum AoCError: Error { case parseError, rangeError }

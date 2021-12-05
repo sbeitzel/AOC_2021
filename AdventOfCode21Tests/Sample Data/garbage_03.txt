@@ -1,0 +1,4 @@
+Non-numeric text
+00100
+11110
+forward 3

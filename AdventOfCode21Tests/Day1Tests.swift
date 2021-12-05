@@ -16,6 +16,17 @@ class Day1Tests: XCTestCase {
         sampleInput = try String(contentsOfFile: bundle.path(forResource: "sample_1", ofType: "txt") ?? "")
     }
 
+    func testEmptyInput() {
+        XCTAssert(countIncreasingPairs([]) == 0)
+        XCTAssert(countIncreasingTriplets([]) == 0)
+    }
+
+    func testEmptyConversion() {
+        let strings = ["", "  "]
+        let numbers = stringsToInts(strings)
+        XCTAssert(numbers.isEmpty)
+    }
+
     func testFindIncreasingPairs() {
         XCTAssert(countIncreasingPairs(stringsToInts(readNumericStrings(sampleInput))) == 7)
     }
