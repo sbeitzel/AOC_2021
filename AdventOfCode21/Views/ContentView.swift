@@ -25,6 +25,9 @@ struct ContentView: View {
                 Day4View()
                     .tabItem { Text("Day 4: Giant Squid") }
                     .tag(Day4View.tag)
+                Day6View()
+                    .tabItem { Text("Day 6: Lanternfish") }
+                    .tag(Day6View.tag)
             }
         }
     }
