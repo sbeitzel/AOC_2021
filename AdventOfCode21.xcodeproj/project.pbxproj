@@ -12,6 +12,17 @@
 		7C7CC250275E6F7100914C0E /* SimFish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC24F275E6F7100914C0E /* SimFish.swift */; };
 		7C7CC252275E71BC00914C0E /* day06.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CC251275E71BC00914C0E /* day06.txt */; };
 		7C7CC254275E71E500914C0E /* Day6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC253275E71E500914C0E /* Day6View.swift */; };
+		7C7CC258275EEDB800914C0E /* Day5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC257275EEDB800914C0E /* Day5View.swift */; };
+		7C7CC25A275EEE2800914C0E /* Day5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC259275EEE2800914C0E /* Day5Tests.swift */; };
+		7C7CC25C275EEE3D00914C0E /* day05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CC25B275EEE3D00914C0E /* day05.txt */; };
+		7C7CC25E275EEE4F00914C0E /* sample_05.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CC25D275EEE4F00914C0E /* sample_05.txt */; };
+		7C7CC260275FD35400914C0E /* Day7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC25F275FD35400914C0E /* Day7Tests.swift */; };
+		7C7CC262275FD36500914C0E /* sample_07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CC261275FD36500914C0E /* sample_07.txt */; };
+		7C7CC264275FD37C00914C0E /* Day7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC263275FD37C00914C0E /* Day7View.swift */; };
+		7C7CC266275FD3FD00914C0E /* day07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CC265275FD3FD00914C0E /* day07.txt */; };
+		7C7CC268275FD5D600914C0E /* CrabSubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC267275FD5D600914C0E /* CrabSubs.swift */; };
+		7C7CC26A275FE9C000914C0E /* Day8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CC269275FE9C000914C0E /* Day8Tests.swift */; };
+		7C7CC26C275FEA8E00914C0E /* huge_07.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CC26B275FEA8E00914C0E /* huge_07.txt */; };
 		7CCD10F7275AA0AD00D116D0 /* AdventOfCode21App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD10F6275AA0AD00D116D0 /* AdventOfCode21App.swift */; };
 		7CCD10F9275AA0AD00D116D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD10F8275AA0AD00D116D0 /* ContentView.swift */; };
 		7CCD10FB275AA0B300D116D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCD10FA275AA0B300D116D0 /* Assets.xcassets */; };
@@ -61,6 +72,17 @@
 		7C7CC24F275E6F7100914C0E /* SimFish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimFish.swift; sourceTree = "<group>"; };
 		7C7CC251275E71BC00914C0E /* day06.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day06.txt; sourceTree = "<group>"; };
 		7C7CC253275E71E500914C0E /* Day6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6View.swift; sourceTree = "<group>"; };
+		7C7CC257275EEDB800914C0E /* Day5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5View.swift; sourceTree = "<group>"; };
+		7C7CC259275EEE2800914C0E /* Day5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5Tests.swift; sourceTree = "<group>"; };
+		7C7CC25B275EEE3D00914C0E /* day05.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day05.txt; sourceTree = "<group>"; };
+		7C7CC25D275EEE4F00914C0E /* sample_05.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_05.txt; sourceTree = "<group>"; };
+		7C7CC25F275FD35400914C0E /* Day7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7Tests.swift; sourceTree = "<group>"; };
+		7C7CC261275FD36500914C0E /* sample_07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_07.txt; sourceTree = "<group>"; };
+		7C7CC263275FD37C00914C0E /* Day7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7View.swift; sourceTree = "<group>"; };
+		7C7CC265275FD3FD00914C0E /* day07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day07.txt; sourceTree = "<group>"; };
+		7C7CC267275FD5D600914C0E /* CrabSubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrabSubs.swift; sourceTree = "<group>"; };
+		7C7CC269275FE9C000914C0E /* Day8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day8Tests.swift; sourceTree = "<group>"; };
+		7C7CC26B275FEA8E00914C0E /* huge_07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = huge_07.txt; sourceTree = "<group>"; };
 		7CCD10F3275AA0AD00D116D0 /* AdventOfCode21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCD10F6275AA0AD00D116D0 /* AdventOfCode21App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode21App.swift; sourceTree = "<group>"; };
 		7CCD10F8275AA0AD00D116D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,7 +188,10 @@
 		7CCD1133275BE1DA00D116D0 /* AdventOfCode21Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7C7CC269275FE9C000914C0E /* Day8Tests.swift */,
+				7C7CC25F275FD35400914C0E /* Day7Tests.swift */,
 				7C7CC24B275E6E9600914C0E /* Day6Tests.swift */,
+				7C7CC259275EEE2800914C0E /* Day5Tests.swift */,
 				7CCD1167275C44FD00D116D0 /* Day4Tests.swift */,
 				7CCD1157275C16A000D116D0 /* Day3Tests.swift */,
 				7CCD1153275C0C8F00D116D0 /* Day2Tests.swift */,
@@ -179,7 +204,10 @@
 		7CCD1143275BFB2300D116D0 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
+				7C7CC261275FD36500914C0E /* sample_07.txt */,
+				7C7CC26B275FEA8E00914C0E /* huge_07.txt */,
 				7C7CC24D275E6EBF00914C0E /* sample_06.txt */,
+				7C7CC25D275EEE4F00914C0E /* sample_05.txt */,
 				7CCD1163275C444400D116D0 /* sample_04.txt */,
 				7CCD1159275C16B600D116D0 /* sample_03.txt */,
 				7CCD1161275C38D200D116D0 /* sample_o2.txt */,
@@ -195,6 +223,7 @@
 			children = (
 				7CCD113B275BE26500D116D0 /* BitCounting.swift */,
 				7C7CC24F275E6F7100914C0E /* SimFish.swift */,
+				7C7CC267275FD5D600914C0E /* CrabSubs.swift */,
 				7CCD116D275C575F00D116D0 /* Array-chunked.swift */,
 				7CCD115F275C298200D116D0 /* Int-MatchBit.swift */,
 				7CCD1144275BFC0A00D116D0 /* IncreasingDecimal.swift */,
@@ -210,7 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				7CCD10F8275AA0AD00D116D0 /* ContentView.swift */,
+				7C7CC263275FD37C00914C0E /* Day7View.swift */,
 				7C7CC253275E71E500914C0E /* Day6View.swift */,
+				7C7CC257275EEDB800914C0E /* Day5View.swift */,
 				7CCD1169275C452200D116D0 /* Day4View.swift */,
 				7CCD112C275AF30A00D116D0 /* Day3View.swift */,
 				7CCD1128275AB2F600D116D0 /* Day2View.swift */,
@@ -222,7 +253,9 @@
 		7CCD1150275C06EA00D116D0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7C7CC265275FD3FD00914C0E /* day07.txt */,
 				7C7CC251275E71BC00914C0E /* day06.txt */,
+				7C7CC25B275EEE3D00914C0E /* day05.txt */,
 				7CCD1165275C446100D116D0 /* day04.txt */,
 				7CCD112A275AD09200D116D0 /* day03.txt */,
 				7CCD1125275AB15D00D116D0 /* day02.txt */,
@@ -321,10 +354,12 @@
 			files = (
 				7CCD112B275AD09200D116D0 /* day03.txt in Resources */,
 				7C7CC252275E71BC00914C0E /* day06.txt in Resources */,
+				7C7CC25C275EEE3D00914C0E /* day05.txt in Resources */,
 				7CCD1166275C446100D116D0 /* day04.txt in Resources */,
 				7CCD114F275C06C100D116D0 /* day01.txt in Resources */,
 				7CCD10FE275AA0B300D116D0 /* Preview Assets.xcassets in Resources */,
 				7CCD10FB275AA0B300D116D0 /* Assets.xcassets in Resources */,
+				7C7CC266275FD3FD00914C0E /* day07.txt in Resources */,
 				7CCD1127275AB1D600D116D0 /* day02.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,11 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCD1164275C444400D116D0 /* sample_04.txt in Resources */,
+				7C7CC25E275EEE4F00914C0E /* sample_05.txt in Resources */,
 				7CCD115A275C16B600D116D0 /* sample_03.txt in Resources */,
 				7CCD1152275C0B6F00D116D0 /* sample_02.txt in Resources */,
 				7C7CC24E275E6EBF00914C0E /* sample_06.txt in Resources */,
 				7CCD1162275C38D200D116D0 /* sample_o2.txt in Resources */,
+				7C7CC262275FD36500914C0E /* sample_07.txt in Resources */,
 				7CCD1142275BFB0600D116D0 /* sample_1.txt in Resources */,
+				7C7CC26C275FEA8E00914C0E /* huge_07.txt in Resources */,
 				7CCD115E275C1B7000D116D0 /* garbage_03.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +412,9 @@
 				7CCD116C275C492C00D116D0 /* BingoBoard.swift in Sources */,
 				7CCD10F9275AA0AD00D116D0 /* ContentView.swift in Sources */,
 				7CCD114D275C049000D116D0 /* Int-NoGroup.swift in Sources */,
+				7C7CC258275EEDB800914C0E /* Day5View.swift in Sources */,
 				7CCD112D275AF30A00D116D0 /* Day3View.swift in Sources */,
+				7C7CC264275FD37C00914C0E /* Day7View.swift in Sources */,
 				7CCD1145275BFC0A00D116D0 /* IncreasingDecimal.swift in Sources */,
 				7C7CC250275E6F7100914C0E /* SimFish.swift in Sources */,
 				7CCD114B275C020500D116D0 /* Day1View.swift in Sources */,
@@ -385,6 +425,7 @@
 				7CCD10F7275AA0AD00D116D0 /* AdventOfCode21App.swift in Sources */,
 				7CCD116E275C575F00D116D0 /* Array-chunked.swift in Sources */,
 				7CCD1160275C298200D116D0 /* Int-MatchBit.swift in Sources */,
+				7C7CC268275FD5D600914C0E /* CrabSubs.swift in Sources */,
 				7CCD116A275C452200D116D0 /* Day4View.swift in Sources */,
 				7CCD113E275BF74100D116D0 /* InputParsing.swift in Sources */,
 			);
@@ -394,7 +435,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7CC25A275EEE2800914C0E /* Day5Tests.swift in Sources */,
+				7C7CC260275FD35400914C0E /* Day7Tests.swift in Sources */,
 				7CCD1140275BF9BB00D116D0 /* Day1Tests.swift in Sources */,
+				7C7CC26A275FE9C000914C0E /* Day8Tests.swift in Sources */,
 				7CCD1158275C16A000D116D0 /* Day3Tests.swift in Sources */,
 				7CCD1154275C0C8F00D116D0 /* Day2Tests.swift in Sources */,
 				7CCD1168275C44FD00D116D0 /* Day4Tests.swift in Sources */,
