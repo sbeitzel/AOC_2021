@@ -5,6 +5,7 @@
 //  Created by Stephen Beitzel on 12/7/21.
 //
 
+import Algorithms
 import Foundation
 
 class CrabSubMover {
@@ -40,56 +41,105 @@ class CrabSubMover {
         return -1
     }
 
-    var bestPositionAndCost: (Int, Int) {
+    // swiftlint:disable:next large_tuple
+    var bestPositionAndCost: (Int, Int, Int) {
+        return optimisticLinearSearch(minPos: minPosition, maxPos: maxPosition, depth: 0)
+    }
+
+    // swiftlint:disable:next large_tuple
+    func floodFind() -> (Int, Int, Int) {
         var bestCost = Int.max
         var bestPosition = -1
         var checksSinceBetter = 0
         var totalChecks = 0
         let initial = mostFrequentPosition
 
-        print("Starting search at position \(initial)")
-
         let sortedPositions = (minPosition...maxPosition).sorted(by: { abs($0 - initial) < abs($1 - initial)})
 
         for position in sortedPositions {
-            print("Examining \(position)")
             let cost = costForTarget(position)
             totalChecks += 1
             if cost < bestCost {
                 bestPosition = position
                 bestCost = cost
                 checksSinceBetter = 0
-                print("It's a better target!")
             } else {
                 checksSinceBetter += 1
-                print("It's not better")
             }
             if checksSinceBetter > 3 {
-                print("We are definitely getting worse. We've found a local minimum, so we're bailing.")
                 break
             }
         }
-        print("Total checks to find best: \(totalChecks)")
 
-        return (bestPosition, bestCost)
+        return (bestPosition, bestCost, totalChecks)
+    }
+
+    // swiftlint:disable:next large_tuple
+    func optimisticLinearSearch(minPos: Int, maxPos: Int, depth: Int) -> (Int, Int, Int) {
+        // We're going to assume that we've got a parabola with
+        // one minimum point. So, we start our search with an array
+        // of possible choices. We pick the midpoint and compute its value.
+        guard maxPos > minPos else { return (maxPos, costForTarget(maxPos), depth) }
+        if maxPos - minPos == 1 {
+            // we have only to compare these two
+            let maxCost = costForTarget(maxPos)
+            let minCost = costForTarget(minPos)
+
+            return (minCost < maxCost) ? (minPos, minCost, depth) : (maxPos, maxCost, depth)
+        }
+
+        let midpoint = Int(floor( ( Double(maxPos - minPos)/2.0) )) + minPos
+        let midpointCost = costForTarget(midpoint)
+
+        // now, we examine the point directly to the right of the midpoint
+        let increasingXCost = costForTarget(midpoint+1)
+        if increasingXCost > midpointCost {
+            // now we know that everything to the right of midpoint is worse
+            let subrangeOptimum = optimisticLinearSearch(minPos: minPos, maxPos: midpoint, depth: depth+1)
+            if subrangeOptimum.1 < midpointCost {
+                return subrangeOptimum
+            } else {
+                return (midpoint, midpointCost, depth+1)
+            }
+        } else {
+            // we believe that the best answer is somewhere to the right
+            let subrangeOptimum = optimisticLinearSearch(minPos: midpoint+1, maxPos: maxPos, depth: depth+1)
+            if subrangeOptimum.1 < increasingXCost {
+                return subrangeOptimum
+            } else {
+                return (midpoint+1, increasingXCost, depth+1)
+            }
+        }
+    }
+
+    // swiftlint:disable:next large_tuple
+    func exhaustiveSearch() -> (Int, Int, Int) {
+        var computations = 0
+        if let best = (minPosition...maxPosition).min(by: {lhs, rhs in
+            computations += 2
+            return costForTarget(lhs) < costForTarget(rhs)
+        }) {
+            return (best, costForTarget(best), computations)
+        }
+        return (Int.min, Int.max, computations)
     }
 
     func costForTarget(_ dest: Int) -> Int {
         return startingPositions.reduce(0, {intermediate, tuple in
-            let cost = getCost(value: abs(dest - tuple.key)) * tuple.value
+            let cost = recursiveCompute(value: abs(dest - tuple.key)) * tuple.value
             return intermediate + cost
         })
     }
 
-    func sumUpTo(value: Int) -> Int {
-        (0...value).reduce(0, +)
-    }
-
-    func getCost(value: Int) -> Int {
-        if let cost = costDictionary[value] {
-            return cost
+    func recursiveCompute(value: Int) -> Int {
+        if value == 0 {
+            return 0
         }
-        costDictionary[value] = sumUpTo(value: value)
-        return costDictionary[value]!
+        if let precomputed = costDictionary[value] {
+            return precomputed
+        }
+        let computed = value + recursiveCompute(value: value - 1)
+        costDictionary[value] = computed
+        return computed
     }
 }

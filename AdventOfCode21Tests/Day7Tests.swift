@@ -23,8 +23,19 @@ class Day7Tests: XCTestCase {
         guard lines.count > 0 else { throw AoCError.parseError }
         let subs = lines.removeFirst().split(separator: ",").map({Int($0)!})
         let computer = CrabSubMover(subPositions: subs)
-        let bestTuple = computer.bestPositionAndCost
-        print("Best position/cost is \(bestTuple.0), \(bestTuple.1)")
+        _ = computer.bestPositionAndCost
+    }
+
+    func testOptimistic() throws {
+        var lines = readLines(sampleInput)
+        guard lines.count > 0 else { throw AoCError.parseError }
+        let subs = lines.removeFirst().split(separator: ",").map({Int($0)!})
+        let computer = CrabSubMover(subPositions: subs)
+        let bestTuple = computer.optimisticLinearSearch(minPos: computer.minPosition,
+                                                        maxPos: computer.maxPosition,
+                                                        depth: 0)
+        XCTAssertEqual(bestTuple.0, 5)
+        XCTAssertEqual(bestTuple.1, 168)
     }
 
     func testCrabSubs() throws {
@@ -36,6 +47,7 @@ class Day7Tests: XCTestCase {
     }
 
     func testMaxHypothesis() throws {
+        try XCTSkipUnless(false, "Yes, we believe that the data is parabolic")
         var lines = readLines(sampleInput)
         guard lines.count > 0 else { throw AoCError.parseError }
         let subs = lines.removeFirst().split(separator: ",").map({Int($0)!})
